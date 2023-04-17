@@ -1,7 +1,7 @@
 {
-  "name": "react-npm",
+  "name": "alexkkm.github.io",
   "version": "0.1.0",
-  "homepage": "https://alexkkm.github.io",
+  "homepage": "https://alexkkm.github.io/alexkkm.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
