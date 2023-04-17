@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/alexkkm.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/alexkkm.github.io/static/js/main.b8e70b65.js",
-    "static/js/787.52c6f222.chunk.js": "/alexkkm.github.io/static/js/787.52c6f222.chunk.js",
+    "main.js": "/alexkkm.github.io/static/js/main.a536a175.js",
+    "static/js/787.04f07337.chunk.js": "/alexkkm.github.io/static/js/787.04f07337.chunk.js",
     "static/media/logo.svg": "/alexkkm.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/alexkkm.github.io/index.html",
     "main.073c9b0a.css.map": "/alexkkm.github.io/static/css/main.073c9b0a.css.map",
-    "main.b8e70b65.js.map": "/alexkkm.github.io/static/js/main.b8e70b65.js.map",
-    "787.52c6f222.chunk.js.map": "/alexkkm.github.io/static/js/787.52c6f222.chunk.js.map"
+    "main.a536a175.js.map": "/alexkkm.github.io/static/js/main.a536a175.js.map",
+    "787.04f07337.chunk.js.map": "/alexkkm.github.io/static/js/787.04f07337.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b8e70b65.js"
+    "static/js/main.a536a175.js"
   ]
 }
