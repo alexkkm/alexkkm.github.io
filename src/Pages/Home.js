@@ -67,11 +67,19 @@ function Home() {
         <li className="item">
             <h2> Sports </h2>
             <span>
-              Table Tennis Registered Player in HKTTA, with 1 year coaching Experience
+              Table Tennis:
+              <p></p>
+              Registered Player in HKTTA,
+              <p></p>
+              Ex-player for CUHK Table Tennis Team, New Asia College Table Tennis Team
+              <p></p>
+              1 year coaching experience
             </span>
             <p></p>
             <span>
-              Football Player, ex-player for Kwun Tong District U-16
+              Football:
+              <p></p>
+              Ex-player for Kwun Tong District U-16
             </span>
           </li>
           <li className="item">
