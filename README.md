@@ -11,11 +11,7 @@ https://alexkkm.github.io
     Next, you have to install the package gh-pages in your repository.  
     npm:
     ```bash
-    npm install gh-pages
-    ```
-    OR yarn:
-    ```bash
-    yarn add gh-pages
+    npm install -g gh-pages --save-dev
     ```
 
 3. Add this script in package.json
