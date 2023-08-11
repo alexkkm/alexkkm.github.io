@@ -1,10 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
-import Home from "./Pages/Home";
-import Projects from "./Pages/Projects";
-import Experience from "./Pages/Experience";
-import ProjectDisplay from './Pages/ProjectDisplay';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ScrollToTop from './Components/ScrollToTop';
