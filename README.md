@@ -1,84 +1,56 @@
-# Yarn 的安装
-Yarn 的安装比较简单，直接使用npm命令即可，这样的前提是你已经安装了 Node.js，命令如下：
-## 检查是否具有node.js
-node-v
-## 安装yarn
-npm install -g yarn
-## 安装完成之后可以通过如下命令检测是否安装成功：
-yarn -v
+## Website url:
+https://alexkkm.github.io
 
-如果提示版本号则安装完成，提示的版本号为1.X.X就表示安装成功了
+## gh-page user guideline:
 
+### Set up of gh-pages:
+1. Create a blank github repo or you upload your current project into a github repo
+    You can't deploy on Github pages without a repository that contains all your files so make sure you have the repo ready.
 
-# Yarn 的常用命令
-## 初始化
-yarn init
+2. Install gh-pages
+    Next, you have to install the package gh-pages in your repository.  
+    npm:
+    ```bash
+    npm install gh-pages
+    ```
+    OR yarn:
+    ```bash
+    yarn add gh-pages
+    ```
 
-## 添加依赖包
-yarn add [package] //会自动安装最新版本，会覆盖指定版本号
-yarn add [package] [package] [package] //一次性添加多个包
-yarn add [package]@[version] //添加指定版本的包
-yarn add [package]@[tag] //安装某个tag（比如beta,next或者latest）
+3. Add this script in package.json
+    In the package.json file add below field in line 3.
+    ```json
+    "homepage": "https://[github-username].github.io/[github-repository-name]"
+    ```
 
-## 将依赖项添加到不同依赖项类别
-## 不指定依赖类型默认安装到dependencies里，你也可以指定依赖类型分别添加到devDependencies、peerDependencies和optionalDependencies。
-## 加到 devDependencies
-yarn add [package] --dev
-## 或
-yarn add [package] -D
+4. Create a deploy script
+    Inside the scripts object in package.json file add the following script.
+    ```json
+    "deploy": "gh-pages -d src"
+    ```
+    This script will deploy to Github pages anything in the src directory. You can change src to the name of the directory containing the files you want to deploy.
 
-## 加到 peerDependencies
-yarn add [package] --peer
-## 或
-yarn add [package] -P
+5. Run the script
+    Next, run the publish script in your command line to deploy to gh-pages.  
+    npm:
+    ```bash
+    npm run deploy
+    ```
+    OR yarn:
+    ```bash
+    yarn run deploy
+    ```
+    It may take a bit of time but when it's done you'll see a line that says published.
 
-## 加到 optionalDependencies
-yarn add [package] --optional
-or
-yarn add [package] -O
+6. Change the source branch in the repo settings
 
+    For your website to be deployed successfully, you'll have to go into the settings of your repository. In the Github pages section change the source branch from master to gh-pages. This branch was created when the publish script was run succesfully.  
 
-## 升级依赖包
-yarn upgrade [package] //升级到最新版本
-yarn upgrade [package]@[version] //升级到指定版本
-yarn upgrade [package]@[tag] //升级到指定tag
+Once done, go to the url provided and you'll see your live website.
 
-## 移除依赖包
-yarn remove [package] //移除包
+### gh-pages deploy with message
+npm run deploy -- -m "Deploy React app to GitHub Pages"
 
-
-## 从 package.json 里安装依赖，并将依赖项保存进 yarn.lock
-yarn //安装所有依赖
-yarn install //安装所有依赖
-yarn install --flat //安装一个包的单一版本
-yarn install --force //强制重新下载所有包
-yarn install --production //只安装生产环境依赖
-
-
-## 发布包
-yarn publish
-
-
-## 运行脚本
-yarn run //用来执行在 package.json 中 scripts 属性下定义的脚本
-
-
-## 显示某个包的信息
-yarn info [package] //可以用来查看某个模块的最新版本信息
-
-
-## 缓存
-yarn cache
-yarn cache list //列出已缓存的每个包
-yarn cache dir //返回全局缓存位置
-yarn cache clean //清除缓存
-
-## 初始化项目
-yarn create react-app nameofproject
-
-
-## gh-pages deploy with message
-yarn run deploy -- -m "Deploy React app to GitHub Pages"
-
-## gh-pages deploy without message
-yarn run deploy
+### gh-pages deploy without message
+npm run deploy
