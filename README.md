@@ -1,6 +1,11 @@
 ## Website url:
 https://alexkkm.github.io
 
+## Installation guildline:
+Must forcefully install the node package
+```bash
+npm install -f
+```
 ## gh-page user guideline:
 
 ### Set up of gh-pages:
