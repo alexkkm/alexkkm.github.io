@@ -4,11 +4,14 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GmailIcon from "@material-ui/icons/Mail";
+import CodeIcon from '@material-ui/icons/Code';
+
 import propic from "../Assets/propic.jpg";
 import "../Styles/Home.css";
 import {motion} from "framer-motion";
 import SkillsBar from '../Components/SkillsBar';
 import Contact from '../Components/Contact';
+
 
 function Home() {
   return (
@@ -31,6 +34,7 @@ function Home() {
           <Link href="https://github.com/alexkkm" target="_blank" rel="noopener noreferrer"> <GitHubIcon /> </Link>
           <Link href="https://www.linkedin.com/in/%E8%B2%B4%E6%B0%91-%E6%B1%9F-11524b209/" target="_blank" rel="noopener noreferrer"> <LinkedInIcon /> </Link>
           <Link href={`mailto:${"kwaiman.kong@gmail.com"}?subject=${encodeURIComponent("") || ''}&body=${encodeURIComponent("body") || ''}`} target="_blank" rel="noopener noreferrer"> <GmailIcon /> </Link>
+          <Link href="https://alexkkm.github.io/react-yarn/" target="_blank" rel="noopener noreferrer"> <CodeIcon /> </Link>
         </div>
       </div>
       <div className='skills'>
